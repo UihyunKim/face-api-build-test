@@ -6,13 +6,17 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "bootstrap": "^4.4.1",
+    "face-api.js": "^0.22.1",
+    "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.1"
+    "react-scripts": "3.3.1",
+    "react-webcam": "^5.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "PORT=3030 REACT_APP_URL=http://localhost:3030 react-scripts start",
+    "build": "REACT_APP_URL=http://localhost:5000 react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
